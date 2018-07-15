@@ -1,0 +1,134 @@
+[
+    {
+        "elementType": "geometry.fill",
+        "stylers":
+        [
+            {
+                "saturation": -35
+            },            {
+                "lightness": 55
+            }
+        ]
+    },
+    {
+        "elementType": "geometry.stroke",
+        "stylers":
+        [
+            {
+                "saturation": -20
+            },            {
+                "lightness": 55
+            }
+        ]
+    },    {
+        "elementType": "labels.text",
+        "stylers":
+        [
+            {
+                "lightness": 25
+            }
+        ]
+    },
+    {
+        "featureType": "administrative",
+        "elementType": "labels.text",
+        "stylers":
+        [
+            {
+                "lightness": 50
+            }
+        ]
+    },
+    {
+        "featureType": "landscape",
+        "elementType": "labels.text",
+        "stylers":
+        [
+            {
+                "lightness": 45
+            }
+        ]
+    },
+    {
+        "featureType": "poi",
+        "elementType": "geometry",
+        "stylers":
+        [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "poi",
+        "elementType": "labels.text",
+        "stylers":
+        [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "poi.business",
+        "stylers":
+        [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "poi.business",
+        "elementType": "labels",
+        "stylers":
+        [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "labels",
+        "stylers":
+        [
+            {
+                "saturation": -45
+            },            {
+                "lightness": 35
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "labels.icon",
+        "stylers":
+        [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "labels.text",
+        "stylers":
+        [
+            {
+                "lightness": 5
+            }
+        ]
+    },
+    {
+        "featureType": "transit.station",
+        "stylers":
+        [
+            {
+                "saturation": -45
+            },            {
+                "visibility": "off"
+            }
+        ]
+    }
+]

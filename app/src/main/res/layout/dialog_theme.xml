@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:paddingEnd="16dp"
+    android:paddingStart="16dp">
+
+    <LinearLayout
+        android:id="@+id/darkThemeLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="13dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="13dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/roboto_medium"
+            android:maxLines="2"
+            android:text="@string/dialog_dark_theme"
+            android:textColor="@color/white"
+            android:textSize="16sp"/>
+
+        <CheckBox
+            android:id="@+id/darkThemeCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="13dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/bg_check_box"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lightThemeLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/darkThemeLinearLayout">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="13dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="13dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/roboto_medium"
+            android:maxLines="2"
+            android:text="@string/dialog_light_theme"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/ligtThemeCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="13dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/bg_check_box"/>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

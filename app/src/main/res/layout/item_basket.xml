@@ -1,0 +1,131 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="4dp"
+        app:cardMaxElevation="8dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?selectableItemBackground"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/productImageView"
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                android:layout_alignParentStart="true"
+                android:adjustViewBounds="true"
+                android:transitionName="@string/transition_product"
+                app:layout_constraintEnd_toStartOf="@+id/nameTextView"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/nameTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/roboto_regular"
+                android:lines="3"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toStartOf="@+id/deleteBasketImageView"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toEndOf="@+id/productImageView"
+                tools:text="Name product" />
+
+            <TextView
+                android:id="@+id/priceTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/nameTextView"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/roboto_medium"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/nameTextView"
+                app:layout_constraintTop_toBottomOf="@+id/nameTextView"
+                tools:text="Price" />
+
+            <ImageView
+                android:id="@+id/deleteBasketImageView"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="8dp"
+                android:adjustViewBounds="true"
+                android:background="?selectableItemBackground"
+                android:src="@drawable/ic_delete_item_busket"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toEndOf="@+id/nameTextView" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/deleteBasketImageView"
+                app:layout_constraintStart_toStartOf="@+id/priceTextView"
+                app:layout_constraintTop_toBottomOf="@+id/priceTextView">
+
+                <ImageButton
+                    android:id="@+id/minusButton"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_alignTop="@+id/valueTextView"
+                    android:layout_toStartOf="@+id/valueTextView"
+                    android:background="@drawable/dialog_button"
+                    android:foreground="?selectableItemBackgroundBorderless"
+                    android:src="@mipmap/ic_counter_minus" />
+
+                <TextView
+                    android:id="@+id/valueTextView"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginStart="2dp"
+                    android:background="@color/colorPrimary"
+                    android:fontFamily="@font/roboto_regular"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    tools:text="10" />
+
+                <ImageButton
+                    android:id="@+id/plusButton"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_alignTop="@+id/valueTextView"
+                    android:layout_toEndOf="@+id/valueTextView"
+                    android:background="@drawable/dialog_button"
+                    android:foreground="?selectableItemBackgroundBorderless"
+                    android:src="@mipmap/ic_counter_plus" />
+
+            </RelativeLayout>
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
+
+

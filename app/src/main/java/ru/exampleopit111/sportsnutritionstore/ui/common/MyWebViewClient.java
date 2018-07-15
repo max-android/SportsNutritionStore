@@ -1,0 +1,16 @@
+package ru.exampleopit111.sportsnutritionstore.ui.common;
+
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
+
+/**
+ * Created Максим on 21.06.2018.
+ * Copyright © Max
+ */
+public class MyWebViewClient extends WebViewClient {
+    @Override
+    public boolean shouldOverrideUrlLoading(WebView view, String url) {
+        view.loadUrl(url);
+        return true;
+    }
+}

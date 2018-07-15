@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="center"
+            android:text="@string/courier"
+            android:textColor="@color/white"
+            android:textSize="21sp"/>
+
+        <TextView
+            android:id="@+id/courierPriceTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="center"
+            android:textColor="@color/red"
+            android:textSize="21sp"
+            tools:text="5000 р"/>
+
+        <ImageView
+            android:id="@+id/courierImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?selectableItemBackground"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_courier"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="center"
+            android:text="@string/self_delivery"
+            android:textColor="@color/white"
+            android:textSize="21sp"/>
+
+        <TextView
+            android:id="@+id/shopPriceTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="center"
+            android:textColor="@color/red"
+            android:textSize="21sp"
+            tools:text="5000 р"/>
+
+        <ImageView
+            android:id="@+id/shopImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?selectableItemBackground"
+            android:layout_gravity="center"
+            android:padding="16dp"
+            android:src="@drawable/ic_shopping_basket"/>
+    </LinearLayout>
+</LinearLayout>
+
+

@@ -1,0 +1,350 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mask="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="vertical">
+
+    <LinearLayout
+        android:id="@+id/courierLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="center"
+            android:text="@string/personal_information"
+            android:textColor="@color/red"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/nameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginEnd="24dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="@string/personal_information"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            tools:text="Имя" />
+
+        <TextView
+            android:id="@+id/phoneTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="@string/personal_information"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            tools:text="Телефон" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="center"
+            android:text="@string/delivery_address"
+            android:textColor="@color/red"
+            android:textSize="21sp" />
+
+        <EditText
+            android:id="@+id/streetEditText"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_margin="16dp"
+            android:background="@drawable/bg_form_common_edit_text"
+            android:fontFamily="@font/roboto_bold"
+            android:hint="@string/street"
+            android:imeOptions="actionGo"
+            android:inputType="textPersonName"
+            android:paddingEnd="14dp"
+            android:paddingStart="14dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/darkened"
+            android:textSize="16sp"
+            tools:text="@string/street" />
+
+        <EditText
+            android:id="@+id/houseEditText"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/bg_form_common_edit_text"
+            android:fontFamily="@font/roboto_bold"
+            android:hint="@string/house_number"
+            android:imeOptions="actionGo"
+            android:inputType="number"
+            android:paddingEnd="14dp"
+            android:paddingStart="14dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/darkened"
+            android:textSize="16sp"
+            tools:text="@string/house_number" />
+
+        <EditText
+            android:id="@+id/apartmentEditText"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_form_common_edit_text"
+            android:fontFamily="@font/roboto_bold"
+            android:hint="@string/apartment_number"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:paddingEnd="14dp"
+            android:paddingStart="14dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/darkened"
+            android:textSize="16sp"
+            tools:text="@string/apartment_number" />
+
+        <LinearLayout
+            android:id="@+id/datePickerLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_default_layout"
+            android:layout_margin="16dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?selectableItemBackgroundBorderless"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/roboto_medium"
+                android:text="@string/date_setting"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_select_picker" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/timePickerLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_default_layout"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?selectableItemBackgroundBorderless"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/roboto_medium"
+                android:text="@string/time_setting"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_select_picker" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="center"
+            android:text="@string/payment_options"
+            android:textColor="@color/red"
+            android:textSize="21sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="13dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="13dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/roboto_medium"
+                android:maxLines="2"
+                android:text="@string/in_cash"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/inCashCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="13dp"
+                android:layout_marginTop="13dp"
+                android:background="@drawable/bg_check_box"
+                android:checked="false" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="13dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="13dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/roboto_medium"
+                android:maxLines="2"
+                android:text="@string/payment_by_card"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/cardCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="13dp"
+                android:layout_marginTop="13dp"
+                android:background="@drawable/bg_check_box"
+                android:checked="false" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cardLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ru.exampleopit111.sportsnutritionstore.ui.custom.FormEditText
+                android:id="@+id/numberCardEditText"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_margin="16dp"
+                android:background="@drawable/bg_form_common_edit_text"
+                android:fontFamily="@font/roboto_bold"
+                android:hint="@string/enter_card_number"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:paddingEnd="14dp"
+                android:paddingStart="14dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/darkened"
+                android:textSize="16sp"
+                app:cetType="card"
+                tools:text="@string/enter_card_number" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="center"
+            android:text="@string/additionally"
+            android:textColor="@color/red"
+            android:textSize="21sp" />
+
+        <EditText
+            android:id="@+id/commentsEditText"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_margin="16dp"
+            android:background="@drawable/bg_form_common_edit_text"
+            android:fontFamily="@font/roboto_bold"
+            android:hint="@string/comments_order"
+            android:imeOptions="actionDone"
+            android:inputType="textAutoComplete"
+            android:paddingEnd="14dp"
+            android:paddingStart="14dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/darkened"
+            android:textSize="16sp"
+            tools:text="@string/comments_order" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/frameBackgroundColor"
+            android:paddingBottom="8dp"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            android:paddingTop="8dp">
+
+            <TextView
+                android:id="@+id/totalTextTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:fontFamily="@font/roboto_medium"
+                android:text="@string/total_cost_of_goods"
+                android:textColor="@color/white"
+                android:textSize="21sp" />
+
+            <TextView
+                android:id="@+id/totalCoastTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:fontFamily="@font/roboto_medium"
+                android:textColor="@color/white"
+                android:textSize="21sp"
+                tools:text="25 000 р" />
+
+            <Button
+                android:id="@+id/checkoutButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/totalTextTextView"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/bg_default_button"
+                android:enabled="false"
+                android:fontFamily="@font/roboto_medium"
+                android:foreground="?selectableItemBackground"
+                android:text="@string/further"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
+
+
+
+
+    <!--<br.com.sapereaude.maskedEditText.MaskedEditText--><!--android:id="@+id/numberCardEditText"--><!--android:layout_margin="16dp"--><!--android:layout_width="match_parent"--><!--android:layout_height="36dp"--><!--android:background="@drawable/bg_form_common_edit_text"--><!--android:fontFamily="@font/roboto_bold"--><!--android:imeOptions="actionDone"--><!--android:paddingEnd="14dp"--><!--android:paddingStart="14dp"--><!--android:textColor="@color/white"--><!--android:textColorHint="@color/darkened"--><!--android:textSize="16sp"--><!--android:inputType="phone"--><!--android:typeface="monospace"--><!--mask:allowed_chars="1234567890"--><!--mask:mask="################"--><!--android:hint="@string/enter_card_number"--><!--app:keep_hint="true"/>-->

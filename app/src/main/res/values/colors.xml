@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1F304E</color>
+    <color name="colorPrimaryDark">#222427</color>
+    <color name="colorAccent">#D50000</color>
+    <color name="lightColorPrimary">#03A9F4</color>
+    <color name="lightColorPrimaryDark">#039BE5</color>
+    <color name="lightColorAccent">#FF4081</color>
+    <color name="frameBackgroundColor">#0D47A1</color>
+    <color name="red">#D50000</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="darkened">#b4232323</color>
+    <color name="dialogCloseTextViewColor">#A1BAFF</color>
+    <color name="colorText">@color/red</color>
+    <color name="dialogBackgroundColor">#343F54</color>
+    <color name="dialogButtonColor">#212938</color>
+    <color name="dialogButtonPressedBordersColor">#A1BAFF</color>
+    <color name="selectedTabColor">@color/accent</color>
+    <color name="tabSelectedTextColor">#B71C1C</color>
+    <color name="unselectedSettingsTabTextColor">#B2FFFFFF</color>
+    <color name="formBackgroundFocusedColor">#E65100</color>
+    <color name="formBackgroundUnFocusedColor">#607D8B</color>
+    <color name="formBackgroundErrorColor">@color/red</color>
+    <color name="defaultButtonNormalColor">#806280D2</color>
+    <color name="defaultLinkButtonNormalColor">#01579B</color>
+    <color name="defaultLinkButtonDisabledColor">#607D8B</color>
+    <color name="defaultButtonPressedColor">#01579B</color>
+    <color name="defaultButtonDisabledColor">#0288D1</color>
+    <color name="snackbarBackgroundColor">#343F54</color>
+    <color name="spinnerBackgroundColor">#343F54</color>
+    <color name="enabledImageButtonColor">#E0E0E0</color>
+    <color name="dialogMessageTextColor">#B2FFFFFF</color>
+    <color name="dialogMessageNegativeTextColor">@color/dialogCloseTextViewColor</color>
+    <color name="dialogMessagePositiveTextColor">@color/red</color>
+    <color name="orderBackgroundComponentsColor">#343F54</color>
+    <color name="controlNormalCheckBoxColor">#B2FFFFFF</color>
+    <color name="controlActivatedCheckBoxColor">#6280D2</color>
+    <color name="avatarBorderColor">#01579B</color>
+    <color name="avatarCustomColor">#0D47A1</color>
+</resources>
+
+

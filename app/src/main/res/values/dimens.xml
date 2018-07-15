@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="textSnackBar">6sp</dimen>
+    <dimen name="textProfile">16sp</dimen>
+</resources>

@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="21dp"
+    android:paddingEnd="24dp"
+    android:paddingStart="24dp"
+    android:paddingTop="10dp">
+
+    <TextView
+        android:id="@+id/messageTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_regular"
+        android:textColor="@color/dialogMessageTextColor"
+        android:textSize="16sp"
+        tools:text="Подтвердите отправку сообщения Тревога или через 10 сек оно будет отправлено автоматически" />
+
+    <TextView
+        android:id="@+id/positiveTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/messageTextView"
+        android:layout_marginEnd="2dp"
+        android:layout_marginTop="32dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/roboto_medium"
+        android:foreground="?selectableItemBackground"
+        android:textAllCaps="true"
+        android:textSize="16sp"
+        android:visibility="invisible"
+        tools:text="отправить" />
+
+    <TextView
+        android:id="@+id/negativeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/messageTextView"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_toStartOf="@+id/positiveTextView"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/roboto_medium"
+        android:foreground="?selectableItemBackground"
+        android:textAllCaps="true"
+        android:textSize="16sp"
+        android:visibility="invisible"
+        tools:text="отменить"/>
+</RelativeLayout>

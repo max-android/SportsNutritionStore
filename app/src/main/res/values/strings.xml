@@ -1,0 +1,159 @@
+<resources>
+    <!-- region BASE -->
+    <string name="app_name">SportsNutritionStore</string>
+    <string name="close">Закрыть</string>
+    <string name="save">Сохранить</string>
+    <string name="accept">Принять</string>
+    <string name="further">Далее</string>
+    <string name="abolish">Отменить</string>
+    <string name="all">Все</string>
+    <string name="search_titul">Поиск</string>
+    <string name="empty"> </string>
+    <string name="positive_action">Да</string>
+    <string name="negative_action">Нет</string>
+    <string name="ok_action">Ок</string>
+    <string name="not_network">Нет сети !!!</string>
+    <string name="error_data">Попробуйте перезапустить</string>
+    <string name="key">classified information</string>
+    <string name="key2">classified information</string>
+    <!-- endregion BASE -->
+
+    <!-- region MENU -->
+    <string name="main">Главная</string>
+    <string name="category">Категории</string>
+    <string name="basket">Корзина</string>
+    <string name="favorite">Избранное</string>
+    <string name="address">Адреса магазинов</string>
+    <string name="setting">Настройки</string>
+    <string name="about_app">О приложении</string>
+    <string name="my_profile">Мой профиль</string>
+    <string name="permission_location_explanation">Приложению требуется доступ к определению местоположения</string>
+    <string name="permission_file_sistem_explanation">Приложению требуется доступ к файловой системе</string>
+    <!-- endregion MENU -->
+
+    <!-- region LOGIN -->
+    <string name="phone_number_text">Номер телефона</string>
+    <string name="sms_code">Смс код</string>
+    <string name="login_receive">Получить</string>
+    <string name="wrong_code">Неверный код</string>
+    <string name="enter">Войти</string>
+    <string name="phone_hint">+7</string>
+    <string name="code_hint">987</string>
+    <string name="register">Зарегистрироваться</string>
+    <string name="user_name">Имя пользователя</string>
+    <string name="exit">Выход</string>
+    <string name="seconds_text">\u0020 сек</string>
+    <string name="user_mail">Email адрес</string>
+    <string name="user_passward">Пароль - от 6 символов</string>
+    <string name="signed_out">Нет пользователя</string>
+    <string name="authentication_failed">Ошибка аутентификации</string>
+    <string name="permission_write_granted">Разрешение на чтение и запись файлов было предоставлено</string>
+    <string name="permission_write_denied">Чтение и запись файлов запрещена</string>
+    <string name="message_setting">Получение доступа к хранилищу</string>
+    <string name="directory_not_available">SDCARD не доступна в данный момент</string>
+    <string name="entry_registr">Войти или зарегистрироваться</string>
+    <!-- endregion  LOGIN -->
+
+    <!-- region MAP -->
+    <string name="permission_location_granted">Разрешение на местоположение было предоставлено</string>
+    <string name="permission_location_denied">Определение местоположения запрещено</string>
+    <string name="default_profile">default_profile</string>
+    <string name="turn_on_location">Включите геолокацию и перезагрузитесь</string>
+    <string name="my_location">Мое местоположение</string>
+    <string name="map_hint">Подсказка:</string>
+    <string name="connection_paused">Соединение приостановленно</string>
+    <string name="connection_failed">Ошибка подключения</string>
+    <string name="show_route">Показать маршрут</string>
+    <!-- endregion  MAP -->
+
+    <!-- region ProductsCategoryFragment -->
+    <string name="default_category">Аминокислоты</string>
+    <string name="transition_product">transitionProduct</string>
+    <string name="unit_of_price">p</string>
+    <string name="set_in_basket">В корзину</string>
+    <string name="description_product">Описание продукта:</string>
+    <string name="brend_product">Бренд:</string>
+    <string name="applaing_product">Применение:</string>
+    <string name="contrain_product">Противопоказания:</string>
+    <string name="add_product_on_basket">Товар добавлен в корзину</string>
+    <string name="delete_product_on_basket">Товар удален из корзины</string>
+    <string name="add_product_on_favorite">Товар добавлен в избранное</string>
+    <string name="delete_product_on_favorite">Товар удален из избранного</string>
+    <!-- endregion ProductsCategoryFragment -->
+
+    <!-- region ProductDescriptionFragment -->
+    <string name="product_already_basket">Товар уже в корзине</string>
+    <!-- endregion ProductDescriptionFragment -->
+
+    <!-- region FavoriteFragment -->
+    <string name="empty_favorite">Нет избранных товаров</string>
+    <!-- endregion FavoriteFragment -->
+
+    <!-- region BasketFragment -->
+    <string name="empty_basket">Нет товаров в корзине</string>
+    <string name="place_order_for_purchase">Оформить заказ</string>
+    <string name="total_cost_of_goods">Общая стоимость:</string>
+    <string name="purchase_requires_registration">Покупка требует регистрации</string>
+    <string name="must_register">Вам необходимо зарегистрироваться:</string>
+    <string name="registration_capabilities">После регистрации пользователю предоставляется возможность покупки товаров через приложение и возможность получать выгодные предложения!!!</string>
+    <!-- endregion BasketFragment -->
+
+    <!-- region MethodReceivingOrderFragment -->
+    <string name="method_of_receiving_an_order">Cпособ получения заказа</string>
+    <string name="courier">Курьером</string>
+    <string name="self_delivery">Самовывозом</string>
+    <!-- endregion MethodReceivingOrderFragment -->
+
+    <!-- region MethodCourierFragment -->
+    <string name="method_courier">Получение курьером</string>
+    <string name="delivery_address">Адрес доставки:</string>
+    <string name="street">Улица</string>
+    <string name="house_number">Номер дома</string>
+    <string name="apartment_number">Номер квартиры</string>
+    <string name="date_setting">Укажите дату доставки</string>
+    <string name="time_setting">Укажите время доставки</string>
+    <string name="default_date_time">Время и дата не указаны</string>
+    <string name="choose_payment_type">Выберите вид оплаты!!!</string>
+    <string name="error_number_card">Ошибка ввода номера карты!!!</string>
+    <!-- endregion MethodCourierFragment -->
+
+    <!-- region SelfDeliveryMethodFragment -->
+    <string name="method_self_delivery">Получение самовывозом</string>
+    <string name="personal_information">Персональные данные:</string>
+    <string name="points_of_self_export">Точки самовывоза:</string>
+    <string name="additionally">Дополнительно</string>
+    <string name="address1">address1</string>
+    <string name="address2">address2</string>
+    <string name="address3">address3</string>
+    <string name="comments_order">Комментарии к заказу</string>
+    <string name="payment_options">Выберите способ оплаты:</string>
+    <string name="in_cash">Наличными при получении</string>
+    <string name="payment_by_card">По карте Visa, MasterCard</string>
+    <string name="info_order">Информация о заказе:</string>
+    <string name="message_about_order">Ваш заказ успешно принят. Ждите уведомления в виде СМС</string>
+    <string name="message_about_order_by_card">Ваш заказ успешно принят. Вам придет СМС для подтверждения оплаты товара по карте</string>
+    <string name="type_incash">type_incash</string>
+    <string name="type_card">type_card</string>
+    <string name="default_comment">default_comment</string>
+    <string name="enter_card_number">Номер карты</string>
+    <string name="address_snippet"> Адрес магазина:</string>
+    <!-- endregion SelfDeliveryMethodFragment -->
+
+    <!-- region SearchFragment -->
+    <string name="empty_search">Товары не найдены!!!</string>
+    <string name="error_search">Попробуйте другой запрос</string>
+    <!-- endregion SearchFragment -->
+
+    <!-- region SettingsFragment -->
+    <string name="clean_history">Очистить историю</string>
+    <string name="push_notification">Push-уведомления</string>
+    <string name="theme_app">Тема оформления:</string>
+    <string name="dark_theme">темная</string>
+    <string name="blue_theme">светлая</string>
+    <string name="successful_clean_history">Любимые товары и корзина очищены</string>
+    <string name="сonnect_the_internet">Подключите интернет</string>
+    <string name="select_app_theme">Выберите тему для приложения:</string>
+    <string name="dialog_dark_theme">Темная тема</string>
+    <string name="dialog_light_theme">Светлая тема</string>
+    <!-- endregion SettingsFragment -->
+</resources>

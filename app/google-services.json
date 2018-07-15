@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "181768641214",
+    "firebase_url": "https://sportsnutritionstore-d550d.firebaseio.com",
+    "project_id": "sportsnutritionstore-d550d",
+    "storage_bucket": "sportsnutritionstore-d550d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:181768641214:android:1669f61bbb3f701b",
+        "android_client_info": {
+          "package_name": "ru.exampleopit111.sportsnutritionstore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "181768641214-t0dhqa0hj5014vjrf8hvfm3uifnda37f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ru.exampleopit111.sportsnutritionstore",
+            "certificate_hash": "2211b34ab3ca8644769ba33d18e25a818a176558"
+          }
+        },
+        {
+          "client_id": "181768641214-6f3u7c0jdkea8uhvd059uv6tvfcs97a5.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "181768641214-6f3u7c0jdkea8uhvd059uv6tvfcs97a5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAs2lvARNXHN_LG9rneA1q8yq6RPMWtanc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "181768641214-6f3u7c0jdkea8uhvd059uv6tvfcs97a5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
